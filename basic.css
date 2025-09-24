@@ -1,4 +1,3 @@
-/* RESET Y ESTILOS BASE */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +5,6 @@
 }
 
 html {
-    /* Eliminamos el background-color de aquí para que lo controle el body */
     color: #e5e7eb;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     scroll-behavior: smooth;
@@ -17,19 +15,16 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    /* CAMBIO: Se añade la transición para el background-color */
     transition: background-color 0.8s ease-in-out;
-    /* CAMBIO: Color inicial por defecto */
-    background-color: #030712; /* Negro */
+    background-color: #030712;
 }
 
-/* CAMBIO: Nuevas clases para los colores de fondo */
 .bg-dark-blue {
-    background-color: #1a202c; /* Azul oscuro */
+    background-color: #1a202c; 
 }
 
 .bg-dark-purple {
-    background-color: #2d1a3c; /* Morado oscuro */
+    background-color: #2d1a3c; 
 }
 
 
@@ -40,24 +35,20 @@ main {
     padding: 2rem 0;
 }
 
-/* --- CAMBIOS EN EL HEADER (Para hacerlo más pequeño y "delgado") --- */
-
-/* Contenedor principal para el header sticky con margen superior */
 .header-container {
-    position: sticky; /* Hacemos el contenedor "pegajoso" */
-    top: 20px; /* Esta es la separación de 20px de la parte superior que se mantendrá al hacer scroll */
+    position: sticky; 
+    top: 20px; 
     z-index: 1000;
-    width: 100%; /* Ocupa todo el ancho */
-    display: flex; /* Para centrar el header-content */
-    justify-content: center; /* Centra el contenido del header */
-    padding: 0 20px; /* Padding horizontal para que el header no se pegue a los bordes en pantallas pequeñas */
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    padding: 0 20px; 
 }
 
-header { /* Ahora esta es la barra interna, sin position: sticky */
+header { 
     background-color: #0d1117;
     border-radius: 20px;
-    /* CAMBIO CLAVE: Padding vertical reducido para hacer el header más pequeño */
-    padding: 0.5rem 20px; /* Reducido de 1rem a 0.5rem verticalmente */
+    padding: 0.5rem 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -81,9 +72,8 @@ header { /* Ahora esta es la barra interna, sin position: sticky */
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
-    /* CAMBIO CLAVE: Padding vertical reducido para los enlaces de navegación */
-    padding: 0.2rem 0; /* Reducido de 0.5rem a 0.2rem verticalmente */
-    font-size: 0.95rem; /* Opcional: Reducir ligeramente el tamaño de la fuente para un look más compacto */
+    padding: 0.2rem 0;
+    font-size: 0.95rem; 
 }
 
 .main-nav a:hover, .social-links a:hover {
@@ -91,10 +81,9 @@ header { /* Ahora esta es la barra interna, sin position: sticky */
 }
 
 .social-links {
-    /* CAMBIO CLAVE: Tamaño de fuente reducido para los iconos */
-    font-size: 1.2rem; /* Reducido de 1.5rem a 1.2rem */
+    font-size: 1.2rem;
     display: flex;
-    gap: 0.8rem; /* Reducido el espacio entre iconos para ser más compacto */
+    gap: 0.8rem; 
     margin-left: 3rem;
 }
 
@@ -254,20 +243,20 @@ h2 {
   
   .tech-box {
     background-color: #151925;
-    padding: 2.5rem 1.5rem; /* Ajusta el padding para que coincida con la imagen */
+    padding: 2.5rem 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     flex: 1 1 250px;
-    display: flex; /* Nuevo: para alinear el contenido dentro de la caja */
-    flex-direction: column; /* Nuevo: para apilar el contenido verticalmente */
-    align-items: center; /* Nuevo: para centrar el contenido horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .box-icons {
     display: flex;
     justify-content: center;
-    gap: 1.5rem; /* Ajusta este valor si quieres más o menos espacio entre los íconos */
-    flex-wrap: wrap; /* Esta propiedad es la que permite que los elementos se envuelvan a la siguiente línea */
+    gap: 1.5rem; 
+    flex-wrap: wrap; 
   }
   
   .icon-box {
@@ -275,19 +264,18 @@ h2 {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    /* Calcula la anchura para que quepan 3 por fila, restando el espacio del gap */
     width: calc(33.33% - 1.5rem); 
     text-align: center;
   }
   
   .icon-box svg {
-    height: 40px; /* Ajusta el tamaño de los íconos */
+    height: 40px;
     width: auto;
   }
   
   .text-icons {
     font-size: 1rem;
-    color: #a0a0a0; /* Puedes ajustar el color del texto */
+    color: #a0a0a0;
     font-weight: 500;
     text-align: center;
   }
@@ -300,7 +288,7 @@ footer {
     border-top: 1px solid #1f2937;
 }
 
-/* MEDIA QUERIES (PARA ADAPTARSE A DIFERENTES PANTALLAS) */
+/* MEDIA QUERIES */
 
 /* Móviles pequeños */
 @media (max-width: 480px) {
@@ -324,7 +312,7 @@ footer {
     }
 }
 
-/* Tabletas y móviles grandes */
+/* Tablets */
 @media (max-width: 768px) {
     main {
         width: 95%;
@@ -337,7 +325,7 @@ footer {
 
 
 
-
+/* PEQUEÑA MODIFICACIÓN DE BOTONES EN PROYECTOS */
 .button-container-projects {
     display: flex;
     justify-content: center;
